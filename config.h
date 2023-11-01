@@ -8,7 +8,7 @@
 static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", 
+/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
 };
 
@@ -74,7 +74,6 @@ static unsigned int blinktimeout = 800;
 static unsigned int cursorthickness = 2;
 
 /*
-<<<<<<< HEAD
  * 1: render most of the lines/blocks characters without using the font for
  *    perfect alignment between cells (U2500 - U259F except dashes/diagonals).
  *    Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.
@@ -87,8 +86,6 @@ const int boxdraw_bold = 0;
 const int boxdraw_braille = 0;
 
 /*
-=======
->>>>>>> undercurl
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
  * it
  */
@@ -156,13 +153,20 @@ unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
 /*
- * Default shape of cursor
- * 2: Block ("█")
- * 4: Underline ("_")
- * 6: Bar ("|")
- * 7: Snowman ("☃")
+ * https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h4-Functions-using-CSI-_-ordered-by-the-final-character-lparen-s-rparen:CSI-Ps-SP-q.1D81
+ * Default style of cursor
+ * 0: blinking block
+ * 1: blinking block (default)
+ * 2: steady block ("█")
+ * 3: blinking underline
+ * 4: steady underline ("_")
+ * 5: blinking bar
+ * 6: steady bar ("|")
+ * 7: blinking st cursor
+ * 8: steady st cursor
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorstyle = 1;
+static Rune stcursor = 0x2603; /* snowman ("☃") */
 
 /*
  * Default columns and rows numbers
