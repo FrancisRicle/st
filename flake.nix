@@ -21,7 +21,7 @@
           owner = "FrancisRicle"; # Cambia esto
           repo = "st";
           rev = "3e7db675697a422170196ccdf4e3746024c9abed";
-          sha256 = "sha256-WcYoP3IXSes4QGeLBR4Nymmc8VL5COBSPaPRl554WQk=";
+          sha256 = "sha256-+pgX+vzPP9sDaIFCnMAdsKxvhsHcrNpr/5f8Zn9151M=";
         };
         buildInputs = old.buildInputs ++ deps; # Agrega dependencias si es necesario
       });
