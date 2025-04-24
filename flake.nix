@@ -18,10 +18,10 @@
       packages.${system}.st = pkgs.st.overrideAttrs (old: {
         pname = "st";
         src = pkgs.fetchFromGitHub {
-          owner = "FrancisRicle"; # Cambia esto
+          owner =  "FrancisRicle";
           repo = "st";
-          rev = "3e7db675697a422170196ccdf4e3746024c9abed";
-          sha256 = "sha256-+pgX+vzPP9sDaIFCnMAdsKxvhsHcrNpr/5f8Zn9151M=";
+          rev ="18d6ade541bb3f7a876036614a9cc991dce43dd6";
+          sha256 = "sha256-fSZlvGyOwHFHQOWB79XT1GR5GYzyo1Eif16n9yRXLBk=";
         };
         buildInputs = old.buildInputs ++ deps; # Agrega dependencias si es necesario
       });
