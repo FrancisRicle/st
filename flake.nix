@@ -26,6 +26,6 @@
         buildInputs = old.buildInputs ++ deps; # Agrega dependencias si es necesario
       });
 
-      defaultPackage.${system} = self.packages.${system}.st;
+      packages.${system}.default = self.packages.${system}.st;
     };
 }
