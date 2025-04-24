@@ -15,7 +15,7 @@
       xorg.libXinerama
     ];
     in {
-      packages.${system}.st = pkgs.st.overrideAttrs (old: {
+      packages.${system}.default = pkgs.st.overrideAttrs (old: {
         pname = "st";
         src = pkgs.fetchFromGitHub {
           owner =  "FrancisRicle";
@@ -25,7 +25,5 @@
         };
         buildInputs = old.buildInputs ++ deps; # Agrega dependencias si es necesario
       });
-
-      packages.${system}.default = self.packages.${system}.st;
     };
 }
