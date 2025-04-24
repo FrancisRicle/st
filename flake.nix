@@ -20,8 +20,8 @@
         src = pkgs.fetchFromGitHub {
           owner =  "FrancisRicle";
           repo = "st";
-          rev ="18d6ade541bb3f7a876036614a9cc991dce43dd6";
-          sha256 = "sha256-fSZlvGyOwHFHQOWB79XT1GR5GYzyo1Eif16n9yRXLBk=";
+          rev = "4b789bb7a67a2be9052028eff07d7cb904a63cfd";
+          sha256 = "sha256-nLo4NVLevzrMI7m75U7huVqIkhLRknW77CZN/8NS8/s=";
         };
         buildInputs = old.buildInputs ++ deps; # Agrega dependencias si es necesario
       });
