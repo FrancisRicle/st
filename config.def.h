@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Mononoki:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Mononoki Nerd Font Mono:pixelsize=13:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", 
+	"Symbols Nerd Font:pixelsize=13:antialias=true:autohint=true", 
 };
 
 static int borderpx = 2;
